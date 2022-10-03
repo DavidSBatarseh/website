@@ -1,0 +1,64 @@
+html {
+  padding: 5px;
+  background-image: linear-gradient(
+  rgb(159, 86, 159),rgb(210, 152, 86), rgb(94, 153, 113),rgb(63, 135, 164),
+  rgb(159, 86, 159),rgb(210, 152, 86), rgb(94, 153, 113),rgb(63, 135, 164), rgb(159, 86, 159));
+  background-size: 1000% 1000%;
+  animation: gradient 300s linear infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% { background-position: 900% 900% }
+100% { background-position: 100% 100% }
+}
+header {
+  font-size: 40px;
+  text-align: center;
+  padding-top:5px;
+}
+.description{
+  border-radius: 50px;
+  background-color: rgba(0,0,0,0.7);
+  padding: 5px;
+  color: white;
+}
+p {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-gap: 75px;
+}
+.container1 {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-gap: 75px;
+}
+.project {
+  background-color: rgba(255,255,255,.6);
+  border-radius: 20px;
+  text-align: center;
+}
+.project1 {
+  background-color: rgba(255,255,255,.6);
+  border-radius: 20px;
+  text-align: center;
+  max-width: 800px;
+}
+h1{
+  padding: 0px;
+}
+.projectDescription{
+  padding: 10px;
+}
+.pictureSelf{
+  border-radius: 50%;
+  vertical-align: top;
+}
